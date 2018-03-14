@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hangman Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div id="all">
+    <div class="card card-cascade wider reverse my-4">
+    <div class="card-body text-center">
+    <h5 class="card-title"><strong>The Guitar Hangman Game</strong></h5>
+    <h6 class="indigo-text"><strong>Type letters and try to guess the guitar model!</strong></h6>
+    </div>
+    </div>
+    <center>
+
+            <div class="row">
+                    <div class="col-sm-3">
+        
+                
+                        </div>
+                <div class="col-sm-6">
+                        <div class="card">
+                                <div id="score"><b><h6>WELCOME!</b></h6></div>
+                            <div class="card-block">
+                                    <div id="wins"><h6>TYPE A KEY BELOW</h6></div>
+                                    <div id="loses"><h6>TO START GUESSING</h6></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+        
+                        </div>
+            </div>
+
+    <br>
+    <div id="guesses_left"><h6><img src="assets/images/speaker.gif" width="5%">Turn up your volume and try to guess the guitar playing in the background!<img src="assets/images/speaker.gif" width="5%"></h6></div>
+    <div id="keys" style='border-style: none'><h6>Type one key at a time in the following field <input id="whichkey" value="" maxlength="1" size="1"></input></h6></div>
+    <br>
+    <div id="hang" style='border-style: none'><img src='assets/images/hang.jpg' style='border-style: none'></div>
+    <br>
+
+    <div class="row">
+            <div class="col-sm-3">
+
+        
+                </div>
+        <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-block"></div>
+                            <div id="random_key_display"><h3></h3></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+
+                </div>
+    </div>
+    </center>
+    <center>
+    <br>
+    <div id="log"></div>
+    <br>
+    <button id='restart' type='button' class='btn btn-secondary'>RESTART</button>
+    </center>
+</body>
+<script src="assets/javascript/game.js"></script>
+
+</html>
